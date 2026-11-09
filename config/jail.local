@@ -1,0 +1,10 @@
+# /etc/fail2ban/jail.local (fragment)
+# Utworzony poleceniem: sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+
+[sshd]
+enabled  = true
+port     = 2222
+maxretry = 3
+findtime = 5m
+bantime  = 10m
+backend  = systemd

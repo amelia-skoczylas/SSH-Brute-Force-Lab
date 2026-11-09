@@ -1,0 +1,8 @@
+# /etc/ssh/sshd_config (zmienione parametry)
+# Po zmianie: sudo systemctl restart ssh
+
+Port 2222                      # domyslnie 22
+PermitRootLogin no             # domyslnie prohibit-password
+MaxAuthTries 3                 # domyslnie 6
+PubkeyAuthentication yes
+PasswordAuthentication no      # tylko klucze; wylaczone po tescie Fail2Ban
